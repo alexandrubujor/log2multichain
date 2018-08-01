@@ -13,6 +13,7 @@ CHAINNAME="chain-b4"
 def multichain_log(app_id, line):
     api = Savoir(RPCUSER, RPCPASSWD, RPCHOST, RPCPORT, CHAINNAME)
     stream_key = "app_{}".format(app_id)
+    message = line.split(':')[-1]
     data_hex = line.encode('utf-8').hex()
     api.publish(STREAM, stream_key, data_hex)
 
