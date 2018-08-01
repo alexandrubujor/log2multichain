@@ -17,7 +17,7 @@ def multichain_log(app_id, line):
     api.publish(STREAM, stream_key, data_hex)
 
 def process_line(line):
-    m = re.search("Application with id (\d+)",
+    m = re.search("\[ Application (\d+) \]",
                   line,
                   re.IGNORECASE)
     try:
@@ -29,5 +29,4 @@ def process_line(line):
 
 if __name__=="__main__":
     for line in sys.stdin:
-        pass
         process_line(line)
