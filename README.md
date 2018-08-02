@@ -25,3 +25,6 @@ if $programname == 'AppWorkflow' and $msg contains 'Application' then action(typ
 
 # Support
 For support you can contact me via e-mail: alexandru.bujor at bluedrive.ro
+
+https://bluedrive.ro
+
