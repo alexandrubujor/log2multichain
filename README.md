@@ -1,12 +1,12 @@
 # Log2multichain
 
-#Description
+# Description
 
 Log collector capable to process rsyslog logs and send them to a MultiChain stream providing immutable audit trail.
 
 Could be useful when multiple entities want to have a common shared and immutable audit trail.
 
-#How to configure
+# How to configure
 
 
 1. Configure variable from configs.py file.
@@ -23,5 +23,5 @@ if $programname == 'AppWorkflow' and $msg contains 'Application' then action(typ
 
 ```
 
-#Support
+# Support
 For support you can contact me via e-mail: alexandru.bujor at bluedrive.ro
